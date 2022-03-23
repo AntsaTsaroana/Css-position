@@ -1,0 +1,62 @@
+body {
+    height: 200vh;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.container {
+    margin-top: 8rem;
+    border: 2px solid black;
+}
+
+.box {
+    display: inline-block;
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    font-size: 2rem;
+    color: white;
+}
+
+.box-1 {
+    background-color: hsl(0, 30%, 50%);
+    /* Tsy mihetsika */
+    position: static;
+}
+
+.box-2 {
+    background-color: hsl(50, 30%, 50%);
+    position: relative;
+    /* Ireto dia propriete relative amlay position */
+    top: 20px;
+    left: -30px;
+}
+
+.box-3 {
+    background-color: hsl(100, 30%, 50%);
+    /* Lasa miala ao anatin'ilay div mihitsy ilay box-3 */
+    position: absolute;
+    /* Ireto dia propriete absolue par rapport anzay parent misy position relative */
+    top: 0px;
+    right:0px;
+}
+
+.box-4 {
+    background-color: hsl(150, 30%, 50%);
+    /* Fixed mazava be fa tsy mihetsika */
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
+}
+
+.box-5 {
+    background-color: hsl(200, 30%, 50%);
+    top: 10px;
+    position: sticky;
+}
+
+.box-6 {
+    background-color: hsl(250, 30%, 50%);
+}
